@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg,blue, red);
+    font-family: 'Pixelify Sans', cursive, Arial, Helvetica, sans-serif;
+}
+
+.banner{
+    background-image: url("./tela.avif");
+    background-size: 20%;
+    background-attachment: scroll;
+    padding: 32px;
+}
+
+img{
+    width: 20%;
+    display: block;
+    margin: auto;
+    padding: 64px 32px ;
+    background-color: black;
+    border: 4px red solid;
+}
