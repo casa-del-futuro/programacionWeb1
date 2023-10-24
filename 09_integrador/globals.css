@@ -1,0 +1,56 @@
+@import url(./header.css);
+
+/* GLOBALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 20px;
+}
+
+:root{
+    /* COLORS */
+    --color-principal: #3BF;
+    --color-secundario: #04A;
+    /* BG */
+    --bg-color: #EEE;
+    --bg-color-dark: #333;
+    /* TYPOGRAFY */
+    --font-color: #121;
+}   
+
+.button{
+
+}
+
+.title{
+    
+}
