@@ -1,0 +1,16 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+header nav ul{
+   display: flex; 
+   gap: 16px;
+   font-weight: 700;
+}
+
+header img{
+    width: 80px;
+}
