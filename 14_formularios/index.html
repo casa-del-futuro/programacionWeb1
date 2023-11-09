@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+        }
+        textarea{
+            resize: none;
+        }
+        #reset{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input class="input" type="text" name="" id="nombre">
+        
+        <label for="lenguaje">Lenguaje Favorito</label>
+        <select name="" id="lenguaje">
+            <option value="JavaScript">JavaScriptJavaScriptJavaScript</option>
+            <option value="Python" >Python</option>
+            <option value="Java" selected>Java</option>
+        </select>
+
+        <label for="comentario">Comentario</label>
+        <textarea name="" id="comentario" cols="20" rows="10"></textarea>
+
+        <fieldset>
+            <legend>SELECCIONA CORRECTAMENTE</legend>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">FRONTEND</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">backend</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">devops</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">desing</label>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>SLECCIONA SOLO UNO</legend>
+            <div>
+                <input type="radio" name="web" id="">
+                <label for="">html</label>
+            </div>
+            <div>
+                <input type="radio" name="web" id="">
+                <label for="">css</label>
+            </div>
+            <div>
+                <input type="radio" name="web" id="">
+                <label for="">js</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="reset" id="reset" value="RESET">
+            <input onclick="alert('enviado')" type="submit" value="SUBMIT">
+        </div>
+    </form>
+</body>
+</html>
