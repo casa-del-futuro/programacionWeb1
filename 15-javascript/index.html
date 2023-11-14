@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color:white;
+        }
+        .dark{
+            background-color: black !important;
+            color: white;
+        }
+        .tipografia{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1></h1>
+    <h2></h2>
+    <ul></ul>
+    <button onclick="ponerTipografia()">CAMBIAR TIPOGRAFIA</button>
+    <button onclick="cambiarTema()">cambiar tema</button>
+    <button onclick="decirNombre()">XFA CLICK ME !</button>
+</body>
+    <script>
+        /* alert("¿Quieres galletas?") */
+        /* AGREGO TEXTO */
+        /* const nombre = prompt("DECIME TU NOMBRE") */
+
+        /* NODOS */
+        /* const h1 = document.querySelector("h1")
+        h1.innerText = "HOLA " + nombre */
+
+
+        document.querySelector("h2").innerText = "<li>uno</li><li>dos</li><li>tres</li>"
+        /* AGREGO HTML */
+        document.querySelector("ul").innerHTML = "<li>uno</li><li>dos</li><li>tres</li>"
+
+        /* FUNCION */
+        /* DICE EL NOMBRE Y CAMBIA EL COLOR DEL BODY */
+        function decirNombre() {
+            const nombre = prompt("DECIME TU NOMBRE")
+            const h1 = document.querySelector("h1")
+            h1.innerText = "HOLA " + nombre
+
+            document.querySelector("body").style.backgroundColor = "green"
+        }
+
+        /* AGREGA Y QUITA LA TIPOGRAFIA A UESTRO SITIO WEB */
+        function ponerTipografia() {
+            document.querySelector("body").classList.toggle("tipografia")
+        }
+        /* AGREGA Y QUITA LA TIPOGRAFIA A UESTRO SITIO WEB */
+        function cambiarTema() {
+            document.querySelector("body").classList.toggle("dark")
+        }
+
+    </script>
+</html>
+
+
+
+
