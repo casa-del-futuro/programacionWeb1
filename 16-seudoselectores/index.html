@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seudo Selectores</title>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a:visited {
+            background-color: red;
+            color: green;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+        a:active {
+            color: violet;
+            text-decoration: none;
+            transition: 1s all;
+        }
+
+
+        input {
+            outline: none;
+            /* SETER EL BORDE DE UN INPUT */
+            border: red 2px solid;
+        }
+
+        input:focus {
+            background-color: blue;
+        }
+
+        input:active {
+            background-color: red;
+        }
+
+        input:disabled {
+            background-color: orangered;
+        }
+
+        li {
+            transition: all 2s;        }
+
+        li:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        li:nth-child(odd)::before {
+            content: "❌";
+            transition: all 0.3s;
+        }
+        
+        li:nth-child(even) {
+            background-color: chartreuse;
+        }
+        
+        li:nth-child(even)::before {
+            transition: all 0.3s;
+            content: "✅";
+        }
+
+        /*         li::first-letter {
+            font-size: 40px;
+            color: white;
+            font-weight: 800;
+        } */
+
+        @media (max-width: 500px) {
+
+            li {
+                transition: 1s all;
+            }
+
+            li:hover::before {
+                content: "😎";
+                font-size: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://www.github.com/lucaszhh">visita mi github</a>
+
+
+    <input type="text">
+
+    <ul>
+        <li>HOLA</li>
+        <li>COMO ESTAS</li>
+        <li>YO BIEN</li>
+        <li>ME LLAMO LUCAS</li>
+    </ul>
+
+</body>
+
+</html>
