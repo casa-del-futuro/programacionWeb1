@@ -1,4 +1,6 @@
 @import url(./header.css);
+@import url(./swiper.css);
+@import url(./card.css);
 
 /* GLOBALES */
 *{
@@ -54,3 +56,4 @@ p{
 .title{
     
 }
+
