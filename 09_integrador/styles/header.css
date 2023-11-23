@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header{
     display: flex;
     justify-content: space-between;
@@ -76,3 +77,21 @@ header .burger{
 
 
 
+=======
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+header nav ul{
+   display: flex; 
+   gap: 16px;
+   font-weight: 700;
+}
+
+header img{
+    width: 80px;
+}
+>>>>>>> 389c51d253c822d05145d63ede30e92c4e545dbe
